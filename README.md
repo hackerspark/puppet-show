@@ -1,78 +1,24 @@
 ## Boilerplate
 
-Base project for other JS based projects configured to play well with VSC
-<br>
-### Recommended Extensions:
+Project for scraping scripts
 
-* Auto Rename Tag
-* Azure Account
-* Azure Cosmos DB
-* Babel JavaScript
-* Bracket Pair Colorizer 2
-* Checkstyle for Java
-* Community Material Theme
-* CSS Peek
-* CSScomb
-* Debugger for Java
-* Document This
-* ESLint
-* Git Graph
-* Git Tree Compare
-* GitLens -- Git supercharged
-* HTML CSS Support
-* i18n Ally
-* Icon Fonts
-* Import Cost
-* indent-rainbow
-* Java Dependency Viewer
-* Java Extension Pack
-* Java Test Runner
-* JavaScript Debugger Companion Extension
-* JS Parameter Annotations
-* Language Support for Java(TM) by Red Hat
-* LintLens -- ESLint rules made easier
-* Live Sass Compiler
-* Live Server
-* Material Icon Theme
-* Material Theme
-* Material Theme Icons
-* Maven for Java
-* Python
-* REST Client
-* Run protractor
-* solidity
-* stylelint
-* SVG Font Previewer
-* TabNine
-* TensorFlow Snippets
-* TODO Highlight
-* Tomcat for Java
-* Visual Studio IntelliCode
-* XML
-* UNOTES -Markdown Notes WYSIWYG
-* Pastery
+- - -
+
+Useful Links:
+
+* npx create-strapi-app my-project --quickstart
+* [https://dev.to/hichamelbsi/strapi-another-use-case-build-your-own-api-from-any-website-with-puppeteer-h92](https://dev.to/hichamelbsi/strapi-another-use-case-build-your-own-api-from-any-website-with-puppeteer-h92)
 
 <br>
-### Cheatsheets:
-
-* Rollup - [https://devhints.io/rollup](https://devhints.io/rollup)
+* [https://pptr.dev/](https://pptr.dev/)
+* [https://www.sitepoint.com/puppeteer-end-to-end-testing/](https://www.sitepoint.com/puppeteer-end-to-end-testing/)
+* [https://www.browserstack.com/guide/top-javascript-testing-frameworks](https://www.browserstack.com/guide/top-javascript-testing-frameworks)
+* [https://hackernoon.com/tips-and-tricks-for-web-scraping-with-puppeteer-ed391a63d952](https://hackernoon.com/tips-and-tricks-for-web-scraping-with-puppeteer-ed391a63d952)
+* [https://flaviocopes.com/puppeteer/](https://flaviocopes.com/puppeteer/)
+* [https://flaviocopes.com/selectors-api/#basic-jquery-to-dom-api-examples](https://flaviocopes.com/selectors-api/#basic-jquery-to-dom-api-examples)
 
 <br>
-### IMP Links:
+* [https://www.codementor.io/@hirenpatel545/5-best-javascript-web-scraping-libraries-and-tools-sicow2rx9](https://www.codementor.io/@hirenpatel545/5-best-javascript-web-scraping-libraries-and-tools-sicow2rx9)
 
-* Rollup plugins - [https://github.com/rollup/plugins](https://github.com/rollup/plugins)
-* Pastebin - [https://pastebin.com/](https://pastebin.com/)
-* Pastery - [https://www.pastery.net/](https://www.pastery.net/)
-* Rollup external dependency reference - [https://rollupjs.org/guide/en/#warning-treating-module-as-external-dependency](https://rollupjs.org/guide/en/#warning-treating-module-as-external-dependency)
-* Mogo Setup Reference - [https://zellwk.com/blog/local-mongodb/](https://zellwk.com/blog/local-mongodb/)
-* Robomongo - [https://robomongo.org/](https://robomongo.org/)
-* Mongoose Reference - [https://mongoosejs.com/docs/index.html](https://mongoosejs.com/docs/index.html)
-
-### Misc Notes:
-
-* Multi line comment in VSC is Alt + Shift + A
-* JSON Server - [https://www.npmjs.com/package/json-server](https://www.npmjs.com/package/json-server)  Setup may need adding node path to the PATH environment variable for the json-server command to work
-* .\mongod.exe --dbpath C:\MongoData\ to run mongodb server
-* [https://sequelize.org/](https://sequelize.org/)
-* [https://github.com/tomjschuster/sequelize-ui](https://github.com/tomjschuster/sequelize-ui)
-* [https://blog.angular-university.io/angular-jwt-authentication/](https://blog.angular-university.io/angular-jwt-authentication/)
+<br>
+* [https://dev.to/proticm/how-to-setup-rollup-config-45mk](https://dev.to/proticm/how-to-setup-rollup-config-45mk)

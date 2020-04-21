@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "puppet-show",
   "version": "1.0.0",
-  "description": "Base project for extension",
+  "description": "Project for scraping scripts",
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
@@ -20,38 +20,26 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^4.2.3",
-    "json-server": "^0.16.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
     "rollup": "^1.16.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-globals": "^1.4.0",
-    "rollup-plugin-terser": "^5.0.0",
-    "serve": "^11.0.2"
+    "rollup-plugin-terser": "^5.0.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "express-jwt": "^5.3.1",
-    "express-middleware-rollup": "^3.0.0",
-    "jwks-rsa": "^1.7.0",
-    "mongodb": "^3.5.4",
-    "mongodb-client-encryption": "^1.0.1",
-    "mongoose": "^5.9.4"
+    "puppeteer": "^3.0.0"
   },
   "scripts": {
+    "start": "node public/server.js",
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "dev": "npm-run-all --parallel start watch",
-    "start": "serve public",
-    "server": "npm-run-all build start-server ",
-    "start-server": "node public/server.js",
-    "db": "npm-run-all build start-db",
-    "start-db": "node public/db.js",
-    "dummy-db": "json-server --watch public/dummy-db.json"
+    "dev": "npm-run-all build start"
   },
   "author": "",
   "license": "ISC"
