@@ -1,7 +1,20 @@
+import express from 'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
+import jwt from 'express-jwt';
+import jwks from 'jwks-rsa';
 import puppeteer from 'puppeteer';
-import cheerio from 'cheerio';
+import cheerio from 'cheerio'; // Works only with data thats retured by a request; thus puppeteer's evaluate is much more proficient
 
-(async () => {
+const app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
+app.use(cookieParser());
+
+app.get('/test', async (req, res) => {
   const browser = await puppeteer.launch({
     args: [
       '--no-sandbox',
@@ -10,8 +23,7 @@ import cheerio from 'cheerio';
       '--disable-accelerated-2d-canvas',
       '--disable-gpu',
       '--window-size=1920x1080'
-    ],
-    headless: false
+    ]
   });
   const page = await browser.newPage();
   await page.goto('http://example.com');
@@ -19,4 +31,9 @@ import cheerio from 'cheerio';
   const $ = cheerio.load(content);
   console.log($('body').text());
   browser.close();
-})();
+  res.send($('body').text());
+});
+
+app.listen(3000, () => {
+  console.log('Example app listening on port 3000!');
+});
