@@ -23,3 +23,6 @@ Useful Links:
 
 <br>
 * [https://dev.to/proticm/how-to-setup-rollup-config-45mk](https://dev.to/proticm/how-to-setup-rollup-config-45mk)
+* [https://www.codementor.io/@olatundegaruba/integration-testing-supertest-mocha-chai-6zbh6sefz](https://www.codementor.io/@olatundegaruba/integration-testing-supertest-mocha-chai-6zbh6sefz)
+* [https://github.com/rollup/rollup-plugin-commonjs/issues/274#issuecomment-545274661](https://github.com/rollup/rollup-plugin-commonjs/issues/274#issuecomment-545274661)
+* [https://www.npmjs.com/package/nyc](https://www.npmjs.com/package/nyc)

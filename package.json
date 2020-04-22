@@ -49,7 +49,7 @@
     "build": "rollup -c",
     "watch": "rollup -c -w",
     "dev": "npm-run-all build start",
-    "test": "mocha dist/test/**/*.js --exit",
+    "test": "mocha dist/test/**/*.js --exit --timeout 60000",
     "coverage": "nyc npm run test"
   },
   "author": "",

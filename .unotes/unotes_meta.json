@@ -8,8 +8,20 @@
       "folders": {},
       "files": {}
     },
-    "public": {
-      "name": "public",
+    "coverage": {
+      "name": "coverage",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "dist": {
+      "name": "dist",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "test": {
+      "name": "test",
       "isOrdered": true,
       "folders": {},
       "files": {}
