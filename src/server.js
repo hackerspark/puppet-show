@@ -15,6 +15,7 @@ app.use(cors());
 app.use(cookieParser());
 
 app.get('/test', async (req, res) => {
+  console.log('In /test');
   const browser = await puppeteer.launch({
     args: [
       '--no-sandbox',
@@ -25,6 +26,7 @@ app.get('/test', async (req, res) => {
       '--window-size=1920x1080'
     ]
   });
+  console.log('Launched chrome');
   const page = await browser.newPage();
   await page.goto('http://example.com');
   const content = await page.content();
@@ -32,6 +34,7 @@ app.get('/test', async (req, res) => {
   console.log($('body').text());
   browser.close();
   res.send($('body').text());
+  console.log('/test complete');
 });
 
 app.listen(3000, () => {
