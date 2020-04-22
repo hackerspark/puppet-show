@@ -21,7 +21,6 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^4.2.3",
-    "istanbul": "^0.4.5",
     "mocha": "^7.1.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
@@ -37,18 +36,21 @@
     "cheerio": "^1.0.0-rc.3",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
-    "puppeteer": "^3.0.0",
     "express": "^4.17.1",
     "express-jwt": "^5.3.1",
     "express-middleware-rollup": "^3.0.0",
-    "jwks-rsa": "^1.7.0"
+    "jwks-rsa": "^1.7.0",
+    "nyc": "^15.0.1",
+    "puppeteer": "^3.0.0",
+    "save-dev": "0.0.1-security"
   },
   "scripts": {
     "start": "node dist/bundle.js",
     "build": "rollup -c",
     "watch": "rollup -c -w",
     "dev": "npm-run-all build start",
-    "test": "mocha dist/test/**/*.js"
+    "test": "mocha dist/test/**/*.js --exit",
+    "coverage": "nyc npm run test"
   },
   "author": "",
   "license": "ISC"
