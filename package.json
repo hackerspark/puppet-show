@@ -8,6 +8,7 @@
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
+    "chai": "^4.2.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-node": "^4.0.0",
@@ -20,13 +21,16 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^4.2.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^7.1.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
     "rollup": "^1.16.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-globals": "^1.4.0",
-    "rollup-plugin-terser": "^5.0.0"
+    "rollup-plugin-terser": "^5.0.0",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -40,10 +44,11 @@
     "jwks-rsa": "^1.7.0"
   },
   "scripts": {
-    "start": "node public/server.js",
+    "start": "node dist/bundle.js",
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "dev": "npm-run-all build start"
+    "dev": "npm-run-all build start",
+    "test": "mocha dist/test/**/*.js"
   },
   "author": "",
   "license": "ISC"
