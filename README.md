@@ -26,3 +26,7 @@ Useful Links:
 * [https://www.codementor.io/@olatundegaruba/integration-testing-supertest-mocha-chai-6zbh6sefz](https://www.codementor.io/@olatundegaruba/integration-testing-supertest-mocha-chai-6zbh6sefz)
 * [https://github.com/rollup/rollup-plugin-commonjs/issues/274#issuecomment-545274661](https://github.com/rollup/rollup-plugin-commonjs/issues/274#issuecomment-545274661)
 * [https://www.npmjs.com/package/nyc](https://www.npmjs.com/package/nyc)
+
+<br>
+* [https://jsonapi.org/](https://jsonapi.org/)
+* [https://gqless.dev/](https://gqless.dev/)

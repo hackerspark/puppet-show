@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(cookieParser());
 
-app.get('/test', async (req, res) => {
+app.get('/example', async (req, res) => {
   console.log('In /test');
   const browser = await puppeteer.launch({
     args: [
