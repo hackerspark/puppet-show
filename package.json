@@ -41,8 +41,10 @@
   },
   "scripts": {
     "start": "node dist/server.js",
+    "inspect": "node --inspect dist/server.js",
     "build": "rollup -c",
     "dev": "npm-run-all build start",
+    "debug": "npm-run-all build inspect",
     "test": "cross-env NODE_ENV=test  mocha dist/test/test.js --exit --timeout 60000",
     "coverage": "nyc npm run test"
   },
