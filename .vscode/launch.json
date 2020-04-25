@@ -6,9 +6,24 @@
   "configurations": [
     {
       "type": "node",
-      "name": "Attach Debugger To Server",
+      "name": "Attach Debug To Server",
       "request": "attach",
       "processId": "${command:PickProcess}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Mocha",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "'${workspaceFolder}/dist/test/test.js'"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "sourceMaps": true
     }
   ]
 }
