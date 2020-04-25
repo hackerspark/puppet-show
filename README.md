@@ -1,6 +1,6 @@
-## Boilerplate
+## Puppet-Show
 
-Project for scraping scripts
+This project consists of puppeteer scripts that work as API to perform various actions across numerous websites.
 
 - - -
 

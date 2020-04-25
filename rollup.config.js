@@ -1,20 +1,54 @@
+/* eslint-disable node/no-unpublished-import */
+import multi from '@rollup/plugin-multi-entry';
+
+const external = [
+  'express',
+  'cors',
+  'body-parser',
+  'cookie-parser',
+  'puppeteer',
+  'cheerio',
+  'chai',
+  'supertest'
+];
+
+const globals = {
+  express: 'express',
+  cors: 'cors',
+  'body-parser': 'bodyParser',
+  'cookie-parser': 'cookieParser',
+  puppeteer: 'puppeteer',
+  cheerio: 'cheerio',
+  chai: 'chai',
+  supertest: 'supertest'
+};
+
+const format = 'umd';
+
+const sourcemap = true;
+
 export default [
   {
-    input: 'src/entry.js',
+    input: 'src/server.js',
     output: {
-      file: 'dist/bundle.js',
-      format: 'umd',
-      sourcemap: true
-    }
-    // external: ['puppeteer', 'cheerio']
+      file: 'dist/server.js',
+      format,
+      sourcemap,
+      name: 'server',
+      globals
+    },
+    external
   },
   {
-    input: 'test/server.test.js',
+    input: 'test/**/*.js',
     output: {
-      file: 'dist/test/server.test.js',
-      format: 'umd',
-      sourcemap: true
-    }
-    // external: ['puppeteer', 'cheerio']
+      file: 'dist/test/test.js',
+      format,
+      sourcemap,
+      name: 'test',
+      globals
+    },
+    external,
+    plugins: [multi()]
   }
 ];

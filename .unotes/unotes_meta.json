@@ -8,12 +8,6 @@
       "folders": {},
       "files": {}
     },
-    "coverage": {
-      "name": "coverage",
-      "isOrdered": true,
-      "folders": {},
-      "files": {}
-    },
     "dist": {
       "name": "dist",
       "isOrdered": true,
