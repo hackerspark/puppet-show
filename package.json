@@ -45,7 +45,7 @@
     "build": "rollup -c",
     "dev": "npm-run-all build start",
     "debug": "npm-run-all build inspect",
-    "test": "cross-env NODE_ENV=test  mocha dist/test/test.js --exit --timeout 60000",
+    "test": "cross-env NODE_ENV=test  mocha dist/test/test.js --exit --colors --timeout 60000",
     "coverage": "nyc npm run test"
   },
   "author": "",

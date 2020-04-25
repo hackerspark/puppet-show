@@ -16,14 +16,18 @@
       "name": "Debug Mocha",
       "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
       "args": [
-        "--timeout",
-        "999999",
+        "'${workspaceFolder}/dist/test/test.js'",
+        "--exit",
         "--colors",
-        "'${workspaceFolder}/dist/test/test.js'"
+        "--timeout",
+        "60000"
       ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
-      "sourceMaps": true
+      "sourceMaps": true,
+      "env": {
+        "NODE_ENV": "test"
+      }
     }
   ]
 }
