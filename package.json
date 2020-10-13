@@ -46,6 +46,7 @@
     "dev": "npm-run-all build start",
     "debug": "npm-run-all build inspect",
     "test": "cross-env NODE_ENV=test  mocha dist/test/test.js --exit --colors --timeout 60000",
+    "build-test": "npm-run-all build test",
     "coverage": "nyc npm run test"
   },
   "author": "",

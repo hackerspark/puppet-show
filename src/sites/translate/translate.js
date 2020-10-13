@@ -19,9 +19,7 @@ const fetchTranslatedPhonotonic = async (req, res) => {
 
     const showMore = await page.$(showMoreSelector);
     await showMore.click();
-  } catch (e) {
-    console.error(e);
-  }
+  } catch (e) {}
   const translatedDataSelector =
     '.tlid-result-transliteration-container  .tlid-transliteration-content';
   const translatedDataElement = await page.$(translatedDataSelector);
@@ -36,6 +34,6 @@ const fetchTranslatedPhonotonic = async (req, res) => {
   });
 };
 
-router.get('/fetchTranslated', fetchTranslatedPhonotonic);
+router.get('/fetchTranslatedPhonotonic', fetchTranslatedPhonotonic);
 
 export default router;
